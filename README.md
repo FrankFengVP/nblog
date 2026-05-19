@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NBlog
+
+A personal blog built with Next.js and Markdown, with English and Chinese support.
+
+## Features
+
+- Home page post list, sorted by date
+- Markdown post pages (static generation)
+- About page
+- i18n: English (default) and Chinese
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). The site picks a locale from your browser `Accept-Language` header (Chinese → `/zh`, otherwise `/en`). Use the header switcher to change language; your choice is saved in a cookie.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Content structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Posts are organized by locale, with matching filenames across folders:
 
-## Learn More
+```
+content/posts/
+  en/
+    welcome.md
+    nextjs-tips.md
+    ...
+  zh/
+    welcome.md
+    nextjs-tips.md
+    ...
+```
 
-To learn more about Next.js, take a look at the following resources:
+The filename (without `.md`) is the URL slug: `/en/blog/welcome`, `/zh/blog/welcome`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Writing a post
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Create a file under `content/posts/en/` or `content/posts/zh/`, for example `my-post.md`:
 
-## Deploy on Vercel
+```markdown
+---
+title: "Post title"
+date: "2026-05-19"
+excerpt: "One-line summary"
+tags: ["tag"]
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Body starts here…
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## UI translations
+
+Interface copy lives in `src/messages/en.ts` and `src/messages/zh.ts`.
+
+## Build & deploy
+
+```bash
+npm run build
+npm start
+```
+
+Deploy to [Vercel](https://vercel.com) or any platform that supports Next.js.
+
+## Stack
+
+- Next.js 16 (App Router)
+- React 19
+- Tailwind CSS 4
+- gray-matter + remark
+# nblog
