@@ -409,9 +409,12 @@ body {
   transform: translateY(-2px);
 }
 
+.post-item-inner {
+  padding: 1.35rem 1.4rem;
+}
+
 .post-item-link {
   display: block;
-  padding: 1.35rem 1.4rem;
   color: inherit;
   text-decoration: none;
 }
@@ -423,7 +426,7 @@ body {
 }
 
 .post-item-title {
-  margin-top: 0.35rem;
+  margin-top: 0;
   font-family: var(--font-serif), serif;
   font-size: 1.32rem;
   font-weight: 600;
@@ -804,7 +807,7 @@ body {
     padding: 1.6rem;
   }
 
-  .post-item-link {
+  .post-item-inner {
     padding: 1.15rem;
   }
 

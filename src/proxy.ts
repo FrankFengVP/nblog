@@ -1,10 +1,8 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import {
-  defaultLocale,
   isValidLocale,
   localeCookieName,
-  locales,
   resolvePreferredLocale,
   type Locale,
 } from "@/lib/i18n";
@@ -25,7 +23,7 @@ function withLocaleCookie(response: NextResponse, locale: Locale) {
   return response;
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const currentLocale = pathnameLocale(pathname);
 
