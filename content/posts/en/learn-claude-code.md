@@ -4,6 +4,7 @@ date: "2026-05-19"
 category: tech
 excerpt: "From a Zhihu pin on learn-claude-code: agency comes from training, not orchestration; Harness engineers build the world models live in."
 tags: ["AI", "Claude", "Agent", "Programming", "Compiling code", "Virtual production", "Monetizing code", "Claude Code"]
+pinned: 2
 ---
 
 > Adapted from a Zhihu pin: [54.6k Star、9k Fork，这个项目用12节课教你从0造出Claude Code同款引擎](https://www.zhihu.com/pin/2033491876934833059), by @代码科小土豆. Rights belong to the original author. Related column: [full article (Chinese)](https://zhuanlan.zhihu.com/p/2033490899401957920)

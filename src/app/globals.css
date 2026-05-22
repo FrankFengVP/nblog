@@ -383,12 +383,121 @@ body {
   color: var(--fg);
 }
 
+.pinned-section {
+  margin-bottom: var(--space-xl);
+}
+
+.posts-section {
+  padding-top: var(--space-xs);
+}
+
 .post-list {
   display: grid;
   gap: var(--space-sm);
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.post-item--pinned {
+  border-color: rgba(139, 94, 60, 0.22);
+  background: rgba(255, 253, 248, 0.88);
+  box-shadow: 0 12px 36px rgba(64, 46, 31, 0.06);
+}
+
+.post-item-pin {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 999px;
+  padding: 0.2rem 0.5rem;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm) var(--space-md);
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-light);
+}
+
+.pagination-control {
+  font-size: 0.875rem;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.pagination-control:hover {
+  text-decoration: underline;
+}
+
+.pagination-control--disabled {
+  color: var(--fg-muted);
+  pointer-events: none;
+}
+
+.pagination-pages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-pages-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.pagination-page {
+  display: inline-flex;
+  min-width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg-secondary);
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.pagination-page:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.pagination-page--current {
+  background: var(--accent);
+  color: var(--surface);
+  font-weight: 600;
+}
+
+.pagination-ellipsis {
+  padding-inline: 0.15rem;
+  color: var(--fg-muted);
+  font-size: 0.875rem;
+}
+
+.pagination-summary {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--fg-muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .post-item {

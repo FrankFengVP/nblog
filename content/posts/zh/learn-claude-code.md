@@ -4,6 +4,7 @@ date: "2026-05-19"
 category: tech
 excerpt: "摘自知乎想法，介绍 GitHub 项目 learn-claude-code：智能来自模型训练，Harness 工程师为模型建造它能居住的世界。"
 tags: ["人工智能", "Claude", "智能体", "编程", "编译代码", "虚拟制作", "代码变现", "ClaudeCode"]
+pinned: 2
 ---
 
 > 本文整理自知乎想法：[54.6k Star、9k Fork，这个项目用12节课教你从0造出Claude Code同款引擎](https://www.zhihu.com/pin/2033491876934833059)，作者 @代码科小土豆。版权归原作者所有。关联专栏：[全文链接](https://zhuanlan.zhihu.com/p/2033490899401957920)

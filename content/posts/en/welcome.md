@@ -4,6 +4,7 @@ date: "2026-05-19"
 category: life
 excerpt: "A personal blog for technology, ideas, and everyday life."
 tags: ["Essay", "Intro"]
+pinned: 1
 ---
 
 Hello, and welcome.

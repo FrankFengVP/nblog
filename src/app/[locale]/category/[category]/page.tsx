@@ -1,18 +1,22 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BackLink } from "@/components/BackLink";
+import { Pagination } from "@/components/Pagination";
 import { PostCard } from "@/components/PostCard";
 import {
   categories,
+  categoryPath,
   getCategoryLabel,
   isValidCategory,
   type Category,
 } from "@/lib/categories";
 import { getDictionary, locales, localizedPath, type Locale } from "@/lib/i18n";
+import { paginate, parsePageParam } from "@/lib/pagination";
 import { getPostsByCategory } from "@/lib/posts";
 
 type Props = {
   params: Promise<{ locale: string; category: string }>;
+  searchParams: Promise<{ page?: string }>;
 };
 
 export async function generateStaticParams() {
@@ -33,15 +37,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function CategoryPage({ params }: Props) {
+export default async function CategoryPage({ params, searchParams }: Props) {
   const { locale, category } = await params;
+  const { page: pageParam } = await searchParams;
   if (!isValidCategory(category)) notFound();
 
   const typedLocale = locale as Locale;
   const typedCategory = category as Category;
   const dict = getDictionary(typedLocale);
-  const posts = getPostsByCategory(typedCategory, typedLocale);
+  const allPosts = getPostsByCategory(typedCategory, typedLocale);
+  const { items: posts, page, total, totalPages } = paginate(
+    allPosts,
+    parsePageParam(pageParam)
+  );
   const label = getCategoryLabel(dict, typedCategory);
+  const basePath = categoryPath(typedLocale, typedCategory);
 
   return (
     <div className="page-main">
@@ -53,19 +63,27 @@ export default async function CategoryPage({ params }: Props) {
           <h1 className="page-title font-serif">{label}</h1>
         </header>
 
-        {posts.length === 0 ? (
+        {total === 0 ? (
           <p className="empty-state">{dict.categoryPage.emptyState}</p>
         ) : (
-          <ul className="post-list">
-            {posts.map((post) => (
-              <PostCard
-                key={post.slug}
-                locale={typedLocale}
-                dict={dict}
-                post={post}
-              />
-            ))}
-          </ul>
+          <>
+            <ul className="post-list">
+              {posts.map((post) => (
+                <PostCard
+                  key={post.slug}
+                  locale={typedLocale}
+                  dict={dict}
+                  post={post}
+                />
+              ))}
+            </ul>
+            <Pagination
+              basePath={basePath}
+              page={page}
+              totalPages={totalPages}
+              dict={dict}
+            />
+          </>
         )}
       </div>
     </div>

@@ -10,13 +10,17 @@ type PostCardProps = {
   locale: Locale;
   dict: Dictionary;
   post: PostMeta;
+  pinned?: boolean;
 };
 
-export function PostCard({ locale, dict, post }: PostCardProps) {
+export function PostCard({ locale, dict, post, pinned = false }: PostCardProps) {
   return (
-    <li className="post-item">
+    <li className={pinned ? "post-item post-item--pinned" : "post-item"}>
       <div className="post-item-inner">
         <div className="post-item-meta">
+          {pinned && (
+            <span className="post-item-pin">{dict.home.pinnedBadge}</span>
+          )}
           <time dateTime={post.date} className="post-item-date">
             {formatDate(post.date, locale)}
           </time>

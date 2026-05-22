@@ -9,6 +9,8 @@ import { type Locale, defaultLocale, isValidLocale } from "@/lib/i18n";
 
 const postsRoot = path.join(process.cwd(), "content/posts");
 
+export const MAX_PINNED_POSTS = 3;
+
 export type PostMeta = {
   slug: string;
   title: string;
@@ -16,6 +18,8 @@ export type PostMeta = {
   excerpt: string;
   category: Category;
   tags: string[];
+  /** Lower number = higher on homepage; only top {@link MAX_PINNED_POSTS} are shown. */
+  pinned?: number;
 };
 
 export type Post = PostMeta & {
@@ -31,7 +35,15 @@ function parseCategory(data: matter.GrayMatterFile<string>["data"]): Category {
   return raw && isValidCategory(raw) ? raw : "tech";
 }
 
+function parsePinned(data: matter.GrayMatterFile<string>["data"]): number | undefined {
+  const raw = data.pinned;
+  if (raw === true) return 999;
+  if (typeof raw === "number" && raw > 0) return raw;
+  return undefined;
+}
+
 function parseMeta(slug: string, data: matter.GrayMatterFile<string>["data"]): PostMeta {
+  const pinned = parsePinned(data);
   return {
     slug,
     title: data.title as string,
@@ -39,7 +51,25 @@ function parseMeta(slug: string, data: matter.GrayMatterFile<string>["data"]): P
     excerpt: (data.excerpt as string) ?? "",
     category: parseCategory(data),
     tags: (data.tags as string[]) ?? [],
+    ...(pinned !== undefined ? { pinned } : {}),
   };
+}
+
+function comparePinned(a: PostMeta, b: PostMeta): number {
+  const orderA = a.pinned ?? 999;
+  const orderB = b.pinned ?? 999;
+  if (orderA !== orderB) return orderA - orderB;
+  return a.date < b.date ? 1 : -1;
+}
+
+export function splitPinnedPosts(posts: PostMeta[]): {
+  pinned: PostMeta[];
+  regular: PostMeta[];
+} {
+  const pinned = posts.filter((p) => p.pinned !== undefined).sort(comparePinned).slice(0, MAX_PINNED_POSTS);
+  const pinnedSlugs = new Set(pinned.map((p) => p.slug));
+  const regular = posts.filter((p) => !pinnedSlugs.has(p.slug));
+  return { pinned, regular };
 }
 
 export function getPostSlugs(locale: Locale = defaultLocale): string[] {

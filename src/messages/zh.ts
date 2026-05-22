@@ -27,7 +27,16 @@ export const zh = {
   },
   home: {
     sectionTitle: "文章",
+    pinnedTitle: "置顶",
+    pinnedBadge: "置顶",
     emptyState: "暂无文章，请在 content/posts/{locale}/ 目录添加 Markdown 文件。",
+  },
+  pagination: {
+    prev: "上一页",
+    next: "下一页",
+    pageOf: "第 {page} / {total} 页",
+    navLabel: "文章分页",
+    ellipsis: "…",
   },
   post: {
     readMore: "阅读",

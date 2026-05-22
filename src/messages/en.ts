@@ -28,8 +28,17 @@ export const en = {
   },
   home: {
     sectionTitle: "Posts",
+    pinnedTitle: "Pinned",
+    pinnedBadge: "Pinned",
     emptyState:
       "No posts yet. Add Markdown files under content/posts/{locale}/.",
+  },
+  pagination: {
+    prev: "Previous",
+    next: "Next",
+    pageOf: "Page {page} of {total}",
+    navLabel: "Post pagination",
+    ellipsis: "…",
   },
   post: {
     readMore: "Read",

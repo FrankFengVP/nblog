@@ -4,6 +4,7 @@ date: "2025-11-21"
 category: emotion
 excerpt: "From a Zhihu column by 腰哥: emotional needs come first; sex is only part of the picture—validation, touch, and praise often explain choices in intimacy more than libido alone."
 tags: ["Emotions", "Relationships", "Emotional Value", "Intimacy", "Zhihu"]
+pinned: 3
 ---
 
 > Adapted from a Zhihu column: [Sex life vs emotional needs—which matters more to women?](https://zhuanlan.zhihu.com/p/1975182964951385616), by @腰哥. Rights belong to the original author. Body text extracted from the offline page saved in your `raw/` folder.
