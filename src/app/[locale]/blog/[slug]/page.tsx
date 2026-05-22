@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BackLink } from "@/components/BackLink";
+import { CategoryBadge } from "@/components/CategoryBadge";
 import { Tag } from "@/components/Tag";
+import { categoryPath } from "@/lib/categories";
 import { formatDate } from "@/lib/format";
 import { getDictionary, locales, localizedPath, type Locale } from "@/lib/i18n";
 import { getPostBySlug, getPostSlugs } from "@/lib/posts";
@@ -49,9 +51,16 @@ export default async function BlogPostPage({ params }: Props) {
         </BackLink>
 
         <header className="article-header">
-          <time dateTime={post.date} className="eyebrow tabular-nums">
-            {formatDate(post.date, typedLocale)}
-          </time>
+          <div className="article-header-meta">
+            <time dateTime={post.date} className="eyebrow tabular-nums">
+              {formatDate(post.date, typedLocale)}
+            </time>
+            <CategoryBadge
+              locale={typedLocale}
+              dict={dict}
+              category={post.category}
+            />
+          </div>
           <h1 className="article-title font-serif">{post.title}</h1>
           {post.tags.length > 0 && (
             <div className="article-meta">
@@ -81,9 +90,14 @@ export default async function BlogPostPage({ params }: Props) {
         )}
 
         <footer className="article-footer">
-          <BackLink href={localizedPath(typedLocale)}>
-            {dict.post.backToPosts}
-          </BackLink>
+          <div className="article-footer-links">
+            <BackLink href={categoryPath(typedLocale, post.category)}>
+              {dict.categories[post.category]}
+            </BackLink>
+            <BackLink href={localizedPath(typedLocale)}>
+              {dict.post.backToPosts}
+            </BackLink>
+          </div>
         </footer>
       </div>
     </article>

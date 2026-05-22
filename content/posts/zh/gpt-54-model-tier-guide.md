@@ -1,6 +1,7 @@
 ---
 title: "GPT-5.4 mini/nano 实测：模型选型从「谁更强」到「谁更适合哪一层」"
 date: "2026-03-15"
+category: tech
 excerpt: "摘自知乎专栏：5.4 家族三分工——大脑、骨干与节点，mini 扛日常，nano 扛高频简单任务。"
 tags: ["人工智能", "OpenAI", "GPT-5.4", "大模型", "Agent"]
 ---

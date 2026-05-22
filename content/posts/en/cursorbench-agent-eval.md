@@ -1,6 +1,7 @@
 ---
 title: "Bye SWE-Bench? Cursor Ships CursorBench for Coding Agents"
 date: "2026-03-10"
+category: tech
 excerpt: "From a Zhihu column: hybrid offline/online evals on real dev tasks—and why old benchmarks stop separating top models."
 tags: ["AI", "Cursor", "Coding Agents", "Benchmarks", "SWE-Bench"]
 ---

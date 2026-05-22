@@ -1,6 +1,7 @@
 ---
 title: "54.6k Stars: Build a Claude Code–Style Engine in 12 Sessions"
 date: "2026-05-19"
+category: tech
 excerpt: "From a Zhihu pin on learn-claude-code: agency comes from training, not orchestration; Harness engineers build the world models live in."
 tags: ["AI", "Claude", "Agent", "Programming", "Compiling code", "Virtual production", "Monetizing code", "Claude Code"]
 ---

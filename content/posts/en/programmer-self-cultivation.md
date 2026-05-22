@@ -1,6 +1,7 @@
 ---
 title: "Notes on The Self-Cultivation of Programmers"
 date: "2026-05-19"
+category: tech
 excerpt: "A condensed summary (from Zhihu) of career, practice, and growth ideas from Chen Yihe's book for programmers."
 tags: ["Career", "Programming", "Notes"]
 ---

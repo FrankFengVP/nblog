@@ -1,6 +1,7 @@
 ---
 title: "Karpathy: AI Coding Changed for Real—The Inflection Was Last December"
 date: "2026-02-05"
+category: tech
 excerpt: "From a Zhihu column: coding agents went from ‘mostly useless’ to long-horizon teammates—and workflows are being rewritten."
 tags: ["AI", "Karpathy", "Coding Agents", "Claude", "Cursor"]
 ---

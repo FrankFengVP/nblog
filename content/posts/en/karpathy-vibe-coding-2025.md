@@ -1,6 +1,7 @@
 ---
 title: "Karpathy’s 2025 Review: AI Got Weird—and That’s Great for Developers"
 date: "2026-01-10"
+category: tech
 excerpt: "From a Zhihu column: RLVR, jagged intelligence, and Vibe Coding—and why builders may be in the best era yet."
 tags: ["AI", "Karpathy", "Vibe Coding", "Developers", "Year in Review"]
 ---

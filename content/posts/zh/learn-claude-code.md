@@ -1,6 +1,7 @@
 ---
 title: "54.6k Star：用 12 节课从 0 造出 Claude Code 同款引擎"
 date: "2026-05-19"
+category: tech
 excerpt: "摘自知乎想法，介绍 GitHub 项目 learn-claude-code：智能来自模型训练，Harness 工程师为模型建造它能居住的世界。"
 tags: ["人工智能", "Claude", "智能体", "编程", "编译代码", "虚拟制作", "代码变现", "ClaudeCode"]
 ---

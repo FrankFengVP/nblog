@@ -1,6 +1,7 @@
 ---
 title: "拜拜了 SWE-Bench？Cursor 发布 CursorBench 评测编程智能体"
 date: "2026-03-10"
+category: tech
 excerpt: "摘自知乎专栏：线上线下混合评测、真实开发场景任务，以及为何旧基准难以区分前沿模型。"
 tags: ["人工智能", "Cursor", "编程智能体", "评测", "SWE-Bench"]
 ---

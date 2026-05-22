@@ -1,6 +1,7 @@
 ---
 title: "AlphaGenome: Reading 1 Million DNA Bases at Once—What It Means for Biology"
 date: "2025-06-27"
+category: news
 excerpt: "From a Zhihu answer: DeepMind’s model hit the Hacker News front page with 1 Mb context and single–base-pair predictions across 11 regulatory modalities."
 tags: ["AI", "Biotech", "AlphaGenome", "DeepMind", "Genomics", "Hacker News"]
 ---

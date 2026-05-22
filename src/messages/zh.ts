@@ -6,7 +6,18 @@ export const zh = {
   nav: {
     home: "首页",
     about: "关于",
+    mainLabel: "主导航",
     footerLabel: "页脚导航",
+  },
+  categories: {
+    tech: "技术",
+    life: "生活",
+    emotion: "情感",
+    news: "资讯",
+  },
+  categoryPage: {
+    emptyState: "该分类下暂无文章。",
+    allPosts: "全部文章",
   },
   hero: {
     title: "思考、技术与日常",

@@ -1,6 +1,7 @@
 ---
 title: "OpenClaw 背后的 Pi：好的 Coding Agent 让用户自己决定需要什么"
 date: "2026-03-18"
+category: tech
 excerpt: "摘自知乎专栏：极简 harness、不到 1000 tokens 提示词，以及为何 Terminal Bench 前五不需要 MCP。"
 tags: ["人工智能", "编程智能体", "OpenClaw", "开源", "Pi"]
 ---

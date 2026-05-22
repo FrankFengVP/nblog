@@ -1,6 +1,7 @@
 ---
 title: "GPT-5.4 mini/nano: Picking Models by Layer, Not by Leaderboard"
 date: "2026-03-15"
+category: tech
 excerpt: "From a Zhihu column: the 5.4 family as brain, backbone, and node—mini for daily work, nano for cheap high-frequency steps."
 tags: ["AI", "OpenAI", "GPT-5.4", "LLM", "Agents"]
 ---

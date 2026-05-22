@@ -6,7 +6,18 @@ export const en = {
   nav: {
     home: "Home",
     about: "About",
+    mainLabel: "Main navigation",
     footerLabel: "Footer navigation",
+  },
+  categories: {
+    tech: "Tech",
+    life: "Life",
+    emotion: "Emotions",
+    news: "News",
+  },
+  categoryPage: {
+    emptyState: "No posts in this category yet.",
+    allPosts: "All posts",
   },
   hero: {
     title: "Thoughts, tech, and everyday life",

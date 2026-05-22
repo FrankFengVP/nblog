@@ -1,6 +1,7 @@
 ---
 title: "Karpathy 2025 年度总结：AI 变「怪」了，但这才是程序员最好的时代"
 date: "2026-01-10"
+category: tech
 excerpt: "摘自知乎专栏：RLVR、锯齿状智力与 Vibe Coding 三大范式转变，以及为何开发者仍站在最好的时代。"
 tags: ["人工智能", "Karpathy", "Vibe Coding", "程序员", "年度总结"]
 ---

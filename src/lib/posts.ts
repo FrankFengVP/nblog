@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import remarkHtml from "remark-html";
+import { type Category, isValidCategory } from "@/lib/categories";
 import { type Locale, defaultLocale, isValidLocale } from "@/lib/i18n";
 
 const postsRoot = path.join(process.cwd(), "content/posts");
@@ -13,6 +14,7 @@ export type PostMeta = {
   title: string;
   date: string;
   excerpt: string;
+  category: Category;
   tags: string[];
 };
 
@@ -24,12 +26,18 @@ function getPostsDirectory(locale: Locale) {
   return path.join(postsRoot, locale);
 }
 
+function parseCategory(data: matter.GrayMatterFile<string>["data"]): Category {
+  const raw = data.category as string | undefined;
+  return raw && isValidCategory(raw) ? raw : "tech";
+}
+
 function parseMeta(slug: string, data: matter.GrayMatterFile<string>["data"]): PostMeta {
   return {
     slug,
     title: data.title as string,
     date: data.date as string,
     excerpt: (data.excerpt as string) ?? "",
+    category: parseCategory(data),
     tags: (data.tags as string[]) ?? [],
   };
 }
@@ -51,6 +59,13 @@ export function getAllPosts(locale: Locale = defaultLocale): PostMeta[] {
       return parseMeta(slug, data);
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
+}
+
+export function getPostsByCategory(
+  category: Category,
+  locale: Locale = defaultLocale
+): PostMeta[] {
+  return getAllPosts(locale).filter((post) => post.category === category);
 }
 
 export async function getPostBySlug(

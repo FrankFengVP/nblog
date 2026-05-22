@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CategoryBadge } from "@/components/CategoryBadge";
 import type { PostMeta } from "@/lib/posts";
 import { formatDate } from "@/lib/format";
 import { Tag } from "@/components/Tag";
@@ -18,9 +19,12 @@ export function PostCard({ locale, dict, post }: PostCardProps) {
         href={localizedPath(locale, `/blog/${post.slug}`)}
         className="post-item-link"
       >
-        <time dateTime={post.date} className="post-item-date">
-          {formatDate(post.date, locale)}
-        </time>
+        <div className="post-item-meta">
+          <time dateTime={post.date} className="post-item-date">
+            {formatDate(post.date, locale)}
+          </time>
+          <CategoryBadge locale={locale} dict={dict} category={post.category} />
+        </div>
         <h2 className="post-item-title font-serif">{post.title}</h2>
         {post.excerpt && <p className="post-item-excerpt">{post.excerpt}</p>}
         <div className="post-item-footer">

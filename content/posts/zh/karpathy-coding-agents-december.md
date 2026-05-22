@@ -1,6 +1,7 @@
 ---
 title: "Karpathy：AI 编程已质变，分水岭在去年 12 月"
 date: "2026-02-05"
+category: tech
 excerpt: "摘自知乎专栏：Coding Agent 从「基本没用」到能扛长任务，编程工作流正在被重写。"
 tags: ["人工智能", "Karpathy", "编程智能体", "Claude", "Cursor"]
 ---

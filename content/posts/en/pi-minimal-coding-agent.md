@@ -1,6 +1,7 @@
 ---
 title: "Pi Behind OpenClaw: A Coding Agent That Lets You Choose What You Need"
 date: "2026-03-18"
+category: tech
 excerpt: "From a Zhihu column: a minimal harness under 1k tokens of prompts—and a Terminal Bench top-five without MCP."
 tags: ["AI", "Coding Agents", "OpenClaw", "Open Source", "Pi"]
 ---

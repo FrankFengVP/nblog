@@ -1,6 +1,7 @@
 ---
 title: "AlphaGenome：一次读取 100 万 DNA 碱基，对生物学研究意味着什么？"
 date: "2025-06-27"
+category: news
 excerpt: "摘自知乎回答：DeepMind 新模型登上 Hacker News 热榜，用 1 Mb 上下文与单碱基分辨率统一预测 11 类基因组调控特征。"
 tags: ["人工智能", "生物科技", "AlphaGenome", "DeepMind", "基因组", "Hacker News"]
 ---

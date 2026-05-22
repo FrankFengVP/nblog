@@ -1,6 +1,7 @@
 ---
 title: "欢迎来到 NBlog"
 date: "2026-05-19"
+category: life
 excerpt: "这是我的个人博客，记录技术、思考与生活片段。"
 tags: ["随笔", "介绍"]
 ---
