@@ -67,6 +67,19 @@ export default async function BlogPostPage({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
+        {post.tags.length > 0 && (
+          <section className="article-topics" aria-labelledby="article-topics-heading">
+            <h2 id="article-topics-heading" className="article-topics-title">
+              {dict.post.topics}
+            </h2>
+            <div className="article-topics-list">
+              {post.tags.map((tag) => (
+                <Tag key={tag} label={tag} />
+              ))}
+            </div>
+          </section>
+        )}
+
         <footer className="article-footer">
           <BackLink href={localizedPath(typedLocale)}>
             {dict.post.backToPosts}

@@ -24,6 +24,7 @@ export const en = {
     readMore: "Read",
     backHome: "Home",
     backToPosts: "All posts",
+    topics: "Topics",
   },
   about: {
     eyebrow: "About",

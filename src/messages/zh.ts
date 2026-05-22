@@ -22,6 +22,7 @@ export const zh = {
     readMore: "阅读",
     backHome: "首页",
     backToPosts: "全部文章",
+    topics: "相关话题",
   },
   about: {
     eyebrow: "关于",
