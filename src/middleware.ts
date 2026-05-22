@@ -23,7 +23,7 @@ function withLocaleCookie(response: NextResponse, locale: Locale) {
   return response;
 }
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const currentLocale = pathnameLocale(pathname);
 
