@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     template: "%s · NBlog",
   },
   description: "A personal blog on technology, ideas, and everyday life.",
+  other: {
+    "google-adsense-account": "ca-pub-7089048762846337",
+  },
 };
 
 export default function RootLayout({
