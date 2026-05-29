@@ -16,6 +16,37 @@ export type GeneratedPost = {
 export const postsData: Record<Locale, GeneratedPost[]> = {
   "en": [
     {
+      "slug": "new-glenn-pad-explosion-zhihu",
+      "title": "New Glenn Pad Explosion: Likely Causes and Fallout",
+      "date": "2026-05-29",
+      "excerpt": "From a Zhihu answer by 太空僧: NG-4 static fire ends in a booster loss at LC-36—propellant leaks, BE-4 trust, and ripple effects on Blue Origin’s Moon and launch manifest.",
+      "category": "news",
+      "tags": [
+        "Space",
+        "New Glenn",
+        "Blue Origin",
+        "BE-4",
+        "NASA",
+        "Zhihu"
+      ],
+      "content": "<blockquote>\n<p>Adapted from a Zhihu Q&#x26;A: <a href=\"https://www.zhihu.com/question/2043624630074835147/answer/2043639886796828971\">New Glenn massive pad explosion on May 29, 2026 — causes and impacts?</a>, by @太空僧. Rights belong to the original author. Body text extracted from the offline page in your <code>raw/</code> folder; videos are on the Zhihu source link.</p>\n</blockquote>\n<h2>What happened</h2>\n<p><strong>New Glenn</strong>, the world’s second operational reusable heavy launcher in this framing, suffered a <strong>ground static fire</strong> for mission <strong>NG-4</strong> at <strong>LC-36</strong>, producing a fireball and mushroom cloud—the author suggests one of the largest <strong>non-nuclear</strong> mushroom clouds on U.S. soil this century.</p>\n<ul>\n<li><strong>When</strong>: ~9 p.m. local time, May 28</li>\n<li><strong>Hardware</strong>: first stage with seven <strong>BE-4</strong> methalox engines</li>\n<li><strong>Context</strong>: pre-launch static test, not a full flight</li>\n<li><strong>Damage</strong>: booster likely destroyed; lightning tower down; pad and integration facilities heavily hit; repair may take months</li>\n<li><strong>Crew</strong>: no casualties reported so far</li>\n</ul>\n<p>Cloud scale is compared to <strong>hundreds of tons of TNT equivalent</strong>—harsher than many prior test failures.</p>\n<h2>Likely causes</h2>\n<p>From early video, the author suspects <strong>propellant leakage</strong> and rapid methalox ignition.</p>\n<p>The blast propagated <strong>bottom-up</strong> (unlike SpaceX’s Amos-6 pattern). Near BE-4, possibilities include overpressure, combustion instability, igniter faults, or seal failures mixing propellants.</p>\n<p>After SpaceX’s V3 engine test success, <strong>BE-4 credibility</strong> may face more public doubt; combined with past upper-stage issues, schedule anxiety grows.</p>\n<h2>Impacts on the Moon program and manifest</h2>\n<p><strong>Blue Moon</strong> needs New Glenn for <strong>Mark 1</strong> cargo and <strong>Mark 2 HLS</strong>—NASA’s second Artemis lander provider alongside SpaceX.</p>\n<ul>\n<li><strong>LC-36</strong> is New Glenn’s only pad; months of repair/investigation; maybe no flight until year-end</li>\n<li>Plans for ~<strong>12 launches</strong> and <strong>45 satellites</strong> this year look unrealistic</li>\n<li>Flight history noted: first flight with booster loss on recovery; second success; third success with payload issues; this stage was for a <strong>fourth</strong> attempt</li>\n</ul>\n<p>Mark 1 demos and Mark 2 development slip; a long probe could shake NASA confidence.</p>\n<p>Early Artemis relies on <strong>SLS</strong> and Orion; HLS matters at landing; Starship adds redundancy. Blue Origin must recover fast to stay in the lunar roadmap.</p>\n<h2>Why an orange-yellow flame?</h2>\n<p>Complete methalox burn is blue-white; imperfect combustion yields hot carbon particles and an <strong>orange-yellow</strong> plume—real engines rarely match textbook ideals.</p>\n<h2>Closing</h2>\n<p>Liquid rockets have iterated through failure since Goddard. The author cites the booster name <strong>“No, It’s Necessary”</strong> from <em>Interstellar</em> and Musk’s line about learning through trial and error—<strong>space is hard</strong>.</p>\n<p>See the Zhihu link for full media and discussion.</p>\n"
+    },
+    {
+      "slug": "ex-cia-gold-bars-zhihu",
+      "title": "Ex-CIA Officer and 300 Gold Bars at Home: What Might “Job-Related” Mean?",
+      "date": "2026-05-29",
+      "excerpt": "From a Zhihu answer by 李文杰: 303 one-kilo bars, tens of millions in unauditable tradecraft funds—and a timeline that points to Iran ops and pre-war intel failures.",
+      "category": "news",
+      "tags": [
+        "World",
+        "CIA",
+        "Intelligence",
+        "Iran",
+        "Zhihu"
+      ],
+      "content": "<blockquote>\n<p>Adapted from a Zhihu Q&#x26;A: <a href=\"https://www.zhihu.com/question/2043416917944296940/answer/2043652346299798718\">How do you view a former CIA officer charged with hoarding 300 gold bars at home, claiming they were “required for work”?</a>, by @李文杰. Rights belong to the original author. Body text extracted from the offline page in your <code>raw/</code> folder.</p>\n</blockquote>\n<h2>The author’s thesis</h2>\n<p>On the timeline, the suspect likely ran <strong>Iran-focused human intelligence</strong>—paying foreign agents—while allegedly <strong>pocketing</strong> funds meant for sources and keeping bullion at home.</p>\n<p>Reported figures cited in the answer:</p>\n<ul>\n<li><strong>Nov 2025–Mar 2026</strong>: withdrew large amounts of foreign currency and <strong>303 bars</strong> of about <strong>1 kg</strong> each, justified as <strong>official / covert-action expenses</strong></li>\n<li>At roughly <strong>1,000 CNY/gram</strong>, the metal alone is on the order of <strong>~303 million CNY</strong>; the author also mentions a <strong>~$40M</strong> scale of related funds</li>\n</ul>\n<p>Covert budgets are often <strong>not reimbursable like normal travel</strong>; paying assets in cash or gold is plausible in theory—<strong>storing bars at home</strong> is not.</p>\n<h2>Why Iran-focused intel?</h2>\n<p>The author’s reasoning (speculative):</p>\n<ol>\n<li>Peacetime tradecraft rarely sees <strong>this density</strong> of gold withdrawals; low-value reporting would not earn “bars per tip.”</li>\n<li>U.S. focus in that window included Venezuela and Iran; Venezuela-related action largely ended by <strong>January</strong>, yet withdrawals continued through <strong>March</strong>—suggesting <strong>Iran</strong>.</li>\n<li>Only Iran, in that period, justified such <strong>secret spending</strong> in the author’s view.</li>\n<li><strong>War with Iran</strong> broke out around <strong>late Feb 2026</strong>, while the gold spike was <strong>pre-war</strong>, under “covert need” paperwork.</li>\n</ol>\n<p>The author further speculates: fabricated sources and reports ahead of war; U.S. forces may have acted on bad assessments (e.g. expecting rapid regime collapse), were unprepared for drones/missiles, and when operations stalled, intel became the scapegoat—<strong>analysis only, not a court finding</strong>.</p>\n<h2>Audit, FBI, and the “tradecraft hole”</h2>\n<p>Press accounts describe a <strong>routine CIA audit</strong> finding assets not on the books, an internal probe, and referral to the <strong>FBI</strong> under DCI <strong>John Ratcliffe</strong>.</p>\n<p>The answer notes the paradox of covert accounting: funds can vanish into a <strong>black hole</strong>, and “the gold bought intel” is a standard defense—<strong>but not if it sits in your house</strong>. A “smarter” cover story (per the author) would hide disposal and claim an active Iran network still maturing.</p>\n<h2>Takeaway</h2>\n<p>The post treats media coverage as incomplete: the case highlights <strong>unauditable covert money</strong>, scale, and overlap with the <strong>Iran war timeline</strong>. Full argument and discussion are on the Zhihu source link.</p>\n"
+    },
+    {
       "slug": "welcome",
       "title": "Welcome to NBlog",
       "date": "2026-05-19",
@@ -245,6 +276,37 @@ export const postsData: Record<Locale, GeneratedPost[]> = {
     }
   ],
   "zh": [
+    {
+      "slug": "new-glenn-pad-explosion-zhihu",
+      "title": "新格伦火箭发射台大规模爆炸：可能原因与影响",
+      "date": "2026-05-29",
+      "excerpt": "摘自知乎回答 @太空僧：NG-4 静态点火测试中一级助推爆炸，或涉推进剂泄漏与 BE-4 可靠性，并冲击蓝色起源登月与全年发射计划。",
+      "category": "news",
+      "tags": [
+        "航天",
+        "新格伦",
+        "蓝色起源",
+        "BE-4",
+        "NASA",
+        "知乎回答"
+      ],
+      "content": "<blockquote>\n<p>本文整理自知乎问答：<a href=\"https://www.zhihu.com/question/2043624630074835147/answer/2043639886796828971\">2026 年 5 月 29 日新格伦火箭在发射台上发生大规模爆炸，可能的原因是什么？将会产生哪些影响？</a>，作者 @太空僧。版权归原作者所有。正文根据你保存在 <code>raw/</code> 文件夹中的网页离线稿提取整理；现场视频请访问知乎原链。</p>\n</blockquote>\n<h2>发生了什么</h2>\n<p><strong>新格伦（New Glenn）</strong> 作为全球现役第二款可复用运载火箭，在 <strong>LC-36</strong> 发射台进行 <strong>NG-4</strong> 任务<strong>地面静态点火测试</strong>时发生爆炸，形成大火球与蘑菇云。作者称，这可能是美国本土本世纪以来规模最大的<strong>非核蘑菇云</strong>之一。</p>\n<ul>\n<li><strong>时间</strong>：当地时间 5 月 28 日晚约 9 点</li>\n<li><strong>配置</strong>：一级助推配备 7 台 <strong>BE-4</strong> 甲烷/液氧发动机</li>\n<li><strong>性质</strong>：地面静点测试，非正式发射，目的是验证发射前发动机工作状态</li>\n<li><strong>损毁</strong>：助推器大概率完全损毁；右侧避雷塔倒塌；发射台设施受损严重，水平总装厂房能否保住未知</li>\n<li><strong>人员</strong>：目前报道无伤亡</li>\n</ul>\n<p>从蘑菇云规模看，作者估算相当于<strong>数百吨 TNT 当量</strong>，较以往同类测试爆炸更为猛烈。</p>\n<h2>可能原因</h2>\n<p>根据现有视频，作者推测可能与<strong>推进剂泄漏</strong>有关：甲烷与液氧混合后瞬间点燃。</p>\n<p>爆炸呈<strong>自下而上</strong>发展（与 SpaceX Amos-6 事故中自上而下的模式不同），起点在 BE-4 发动机附近。可能因素包括：</p>\n<ul>\n<li>发动机过压、燃烧不稳定</li>\n<li>点火器故障</li>\n<li>阀门接口密封失效导致泄漏后混合点燃</li>\n</ul>\n<p>此次事故发生在 SpaceX 成功测试 V3 发动机之后，公众对 <strong>BE-4 可靠性</strong>的质疑可能加剧；叠加新格伦此前二级问题，一级爆炸进一步加重对项目进度的担忧。</p>\n<h2>对美国登月与发射计划的影响</h2>\n<p><strong>Blue Moon</strong> 登月器依赖新格伦：货运 <strong>Mark 1</strong> 与载人 <strong>Mark 2 HLS</strong> 均需新格伦送入月球转移轨道。Mark 2 是 NASA <strong>Artemis</strong> 计划中的第二款载人登月器（另一款为 SpaceX HLS），用于 Artemis 之后任务；NASA 选择蓝色起源作为第二 HLS 供应商，意在避免完全依赖一家。</p>\n<ul>\n<li><strong>LC-36</strong> 是新格伦唯一发射台；爆炸后无备用发射场，修复与调查或需<strong>数月</strong>，年底前能否再飞存疑（附近还有猎鹰 9 的 LC-39A、SLC-40 以及星舰 SLC-37）</li>\n<li>蓝色起源原计划今年约 <strong>12 次新格伦</strong>、年底前发射 <strong>45 颗卫星</strong>，作者认为已难以实现</li>\n<li>新格伦此前：<strong>首飞</strong>入轨、一级回收时爆炸；<strong>二飞</strong>成功；<strong>三飞</strong>成功但载荷卫星故障；本次爆炸的是准备<strong>第四飞</strong>的级段</li>\n</ul>\n<p>后续任务（尤其 Mark 1 演示、Mark 2 开发测试）将推迟；调查若拖久，可能影响 NASA 对蓝色起源的信心。</p>\n<p>Artemis 早期任务主要依赖 <strong>SLS</strong> 与猎户座，HLS 在着陆阶段才用到；马斯克仍在推进星舰，NASA 登月仍有一定冗余。蓝色起源需快速修复并证明可靠性，才能重新支撑月球计划时间表。</p>\n<h2>附：为何火焰呈橙黄色？</h2>\n<p>理想条件下甲烷充分燃烧应呈蓝白色（如煤气灶）。现实中常燃烧不充分、氧供应不足，碳颗粒在高温下发黄光，整体呈<strong>橙黄色</strong>——与初中化学课本中的「理想燃烧」不同。</p>\n<h2>结语</h2>\n<p>作者引用戈达德以来液体火箭「失败与迭代」的历史，以及《星际穿越》中助推器名 <strong>「No, It's Necessary」</strong> 的典故，并转述马斯克「通过试验与错误来学习，永远不要放弃」——<strong>Space is HARD</strong>。</p>\n<p>完整分析、图片与视频请访问知乎原链。</p>\n"
+    },
+    {
+      "slug": "ex-cia-gold-bars-zhihu",
+      "title": "前 CIA 官员家中藏 300 根金条：「工作所需」背后可能是什么？",
+      "date": "2026-05-29",
+      "excerpt": "摘自知乎回答 @李文杰：303 块公斤金条、约四千万美元量级公款——时间线与对伊情报、秘密战线经费黑洞及战前误判的推测。",
+      "category": "news",
+      "tags": [
+        "国际",
+        "CIA",
+        "情报",
+        "伊朗",
+        "知乎回答"
+      ],
+      "content": "<blockquote>\n<p>本文整理自知乎问答：<a href=\"https://www.zhihu.com/question/2043416917944296940/answer/2043652346299798718\">怎么看待美国前CIA官员被控在家中藏匿300根金条，其辩称系「工作所需」？</a>，作者 @李文杰。版权归原作者所有。正文根据你保存在 <code>raw/</code> 文件夹中的网页离线稿提取整理。</p>\n</blockquote>\n<h2>作者在说什么</h2>\n<p>从时间线看，此人很可能负责对<strong>伊朗方向</strong>的情报工作，主要是收买伊朗线人当间谍；作者怀疑其将本应用于间谍活动的经费<strong>私吞</strong>，并把金条藏在家中。</p>\n<p>公开报道中的几个关键数字：</p>\n<ul>\n<li><strong>2025 年 11 月至 2026 年 3 月</strong>：以「因公支出 / 秘密行动需要」为由，向中情局申请并提取大量外币及 <strong>303 块</strong>、每块约 <strong>1 公斤</strong> 的金条</li>\n<li>按约 <strong>1000 元/克</strong> 粗算，仅金条市值已约 <strong>3.03 亿元人民币</strong>；作者另估还有约 <strong>四千万美元</strong> 量级相关款项</li>\n</ul>\n<p>秘密战线经费往往<strong>无法像常规开支一样报销</strong>，线人报酬常用现金或金条支付，理论上存在「拿了金条、物资已换成情报、不在局里」的操作空间——但把金条堆在家里，则完全偏离这一逻辑。</p>\n<h2>为何推断与伊朗情报有关</h2>\n<p>作者的几条推理：</p>\n<ol>\n<li><strong>和平年代情报战线</strong>很少如此密集提取金条；低价值情报通常不会换来「几根金条」级别的报酬。</li>\n<li><strong>2025 年 11 月—2026 年 3 月</strong> 美国主要对外行动焦点包括委内瑞拉与伊朗；委内瑞拉相关行动在 <strong>1 月</strong> 已告一段落，而此人 <strong>3 月</strong> 仍在大量提取金条，故更可能指向<strong>对伊情报</strong>。</li>\n<li>同一时期值得投入如此规模秘密经费的，作者认为<strong>主要是伊朗</strong>；常规战线难以在短时间里动用等量金条。</li>\n<li><strong>对伊战争</strong>约 <strong>2026 年 2 月底</strong> 爆发，而金条提取高峰在战前；申请理由为「因公支出 / 秘密行动需要」。</li>\n</ol>\n<p>作者进一步推测：此人或趁对伊战争窗口<strong>虚构线人与情报</strong>，用虚假信息向军方交差；美军开战初期或受错误情报影响（例如高估伊朗政权迅速崩溃），对无人机、导弹等准备不足，进展不利后情报系统成为追责对象——<strong>以上为作者分析，非法庭认定事实</strong>。</p>\n<h2>审计、移交 FBI 与「秘密战线」话术</h2>\n<p>报道称，中情局对巨额黄金与现金做<strong>内部例行审计</strong>时发现物资不在局内，继而发现违法线索；局长 <strong>约翰·拉特克利夫</strong> 将案件移交 <strong>FBI</strong>。</p>\n<p>作者指出一个讽刺点：若以「金条已用于情报、质量好坏另说」辩护，秘密战线本就有<strong>难以审计</strong>的「黑洞」；但若真用于海外情报网，金条不应出现在家中。更稳妥的做法（作者所称的「不那么愚蠢」的做法）或许是更隐蔽地处置，并声称金条已投入伊朗情报网、尚未见效——而<strong>藏在家中</strong>则使辩护难以成立。</p>\n<h2>小结</h2>\n<p>作者认为，媒体报道可能只是故事的一小部分；此案集中体现了<strong>秘密行动经费</strong>的规模、审计困境，以及与<strong>对伊战争时间线</strong>叠合后的种种猜测。完整论述与评论区讨论请访问知乎原链。</p>\n"
+    },
     {
       "slug": "welcome",
       "title": "欢迎来到 NBlog",
